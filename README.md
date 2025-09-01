@@ -13,3 +13,4 @@ Open `index.html` in a browser, or use VS Code Live Server.
 ## Deploy
 Connect this repo to Netlify (Site settings → Domain management already set to codebycorey.dev).
 # CodebyCorey-Portfolio
+# CoreybyCorey-Porfolio
