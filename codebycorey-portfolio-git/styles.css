@@ -1,0 +1,6 @@
+body{margin:0;font-family:Roboto,Arial,sans-serif;background:#0A192F;color:#E6EEF8}
+h1,h2{font-family:Montserrat,Arial,sans-serif}
+.site-header{display:flex;justify-content:space-between;padding:1rem;background:#081226;color:#fff}
+.section{padding:3rem 1rem;max-width:960px;margin:0 auto}
+.hero{display:grid;gap:2rem;align-items:center}
+.btn{padding:.6rem 1rem;border-radius:8px;text-decoration:none}
