@@ -23,6 +23,40 @@ body {
     line-height: 1.6;
 }
 
+h1, h2, h3 {
+    font-family: Montserrat, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    margin: 0 0 0.6rem;
+}
+
+h1 {
+    font-size: clamp(2rem, 3.4vw + 1rem, 3.2rem);
+    line-height: 1.12;
+}
+
+h2 {
+    font-size: clamp(1.6rem, 2vw + 1rem, 2.2rem);
+}
+
+h3 {
+    font-size: 1.15rem;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 1.1rem;
+}
+
 
 
 
