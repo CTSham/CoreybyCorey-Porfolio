@@ -1,6 +1,34 @@
-body{margin:0;font-family:Roboto,Arial,sans-serif;background:#0A192F;color:#E6EEF8}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500&display=swap');
+
+:root{
+    --navy: #0A192F;
+    --blue: #0077FF;
+    --gray: #F5F5F5;
+    --accent: #00FFB2;
+    --text: #E6EEF8;
+    --muted: #A9B3C1;
+    --card: #0F2442;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,0.25);
+    --maxw: 1100px;
+}
+
+*{box-sizing: border-box}
+html, body{height: 100px}
+body {
+    margin: 0;
+    font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    color: var(--text);
+    background: radial-gradient(1200px 600px at 80% -10%, rgba(0,119,255,0.20), transparent 60%) , var(--navy);
+    line-height: 1.6;
+}
+
+
+
+
+/* body{margin:0;font-family:Roboto,Arial,sans-serif;background:#0A192F;color:#E6EEF8}
 h1,h2{font-family:Montserrat,Arial,sans-serif}
 .site-header{display:flex;justify-content:space-between;padding:1rem;background:#081226;color:#fff}
 .section{padding:3rem 1rem;max-width:960px;margin:0 auto}
 .hero{display:grid;gap:2rem;align-items:center}
-.btn{padding:.6rem 1rem;border-radius:8px;text-decoration:none}
+.btn{padding:.6rem 1rem;border-radius:8px;text-decoration:none} */
