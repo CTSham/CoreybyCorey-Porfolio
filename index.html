@@ -3,23 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Clean code, creative interfaces. Portfolio and services by Corey Shamburger, Frontend Software Engineer." />
   <title>Code by Corey — Frontend Software Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home"><span class="brand__name">Code by Corey</span></a>
-    <nav><ul id="nav-menu" class="nav__list"><li><a href="#projects">Projects</a></li></ul></nav>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="#home" class="brand" aria-label="Code by Corey Home">
+        <span class="brand__name">Code by Corey</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main id="home">
-    <section class="section hero"><h1>Frontend Software Engineer</h1></section>
-    <section id="projects" class="section"><h2>Projects</h2></section>
-    <section id="services" class="section"><h2>Services</h2></section>
-    <section id="about" class="section"><h2>About</h2></section>
-    <section id="contact" class="section"><h2>Contact</h2></section>
+    <section id="hero" aria-label="Hero">
+      <div class="container">
+        <h1>Frontend Software Engineer</h1>
+        <p>Clean code, creative interfaces.</p>
+        <p>
+          <a href="#projects">View My Work</a> ·
+          <a href="#contact">Hire Me</a>
+        </p>
+      </div>
+    </section>
+    <section id="projects" aria-label="Featured Projects">
+      <div class="container">
+        <h2 class="Featured Projects"></h2>
+        <article>
+          <header>
+            <h3>Top-Notch Landing</h3>
+          </header>
+          <p>High‑converting landing page for a contractor marketplace. Responsive and SEO ready.</p>
+          <ul>
+            <li>Tech: HTML, CSS, JavaScript</li>
+            <li>Role: Frontend Dev</li>
+          </ul>
+          <p>
+            <a href="#" aria-label="Open live site for Top-Notch Landing">live</a>
+            <a href="#" aria-label="Open GitHub repo for Top-Notch Landing">GitHub</a>
+          </p>
+        </article>
+        <article>
+          <header>
+            <h3>AutoCare Dashboard</h3>
+          </header>
+          <p>Service scheduling UI for automotive shop workflows - clean tables, modals, and charts.</p>
+          <ul>
+            <li>Tech: React, Next.js, REST API</li>
+            <li>Role: Frontend Dev</li>
+          </ul>
+          <p>
+            <a href="#" aria-label="Open live site for AutoCare Dashboard">live</a>
+            <a href="#" aria-label="Open GitHub repo for AutoCare Dashboard">GitHub</a>
+          </p>
+        </article>
+        <article>
+          <header>
+            <h3>UI Component Library</h3>
+          </header>
+          <p>Reusable, accessible components (buttons, cards, forms) with tokens and docs.</p>
+          <ul>
+            <li>Tech: TypeScript, React</li>
+            <li>Role: Component Engineer</li>
+          </ul>
+          <p>
+            <a href="#" aria-label="Open Storybook for UI Component Library">Storybook</a>
+            <a href="#" aria-label="Open GitHub repo for UI Component Library">GitHub</a>
+          </p>
+        </article>
+      </div>
+    </section>
+    <section id="services" aria-label="Services">
+      <div class="container">
+        <h2 class="Services"></h2>
+        <ul>
+          <li>
+            <h3>Frontend Development</h3>
+            <p>Modern, responsive, and accessible website built with best practices.</p>
+          </li>
+          <li>
+            <h3>UI/UX Implementation</h3>
+            <p>Pixel-perfect builds from Figma or custom designs with systemized tokens.</p>
+          </li>
+          <li>
+            <h3>Performance & SEO</h3>
+            <p>Fast loads, great Core Web Vitals, and SEO-friendly structure.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="about" aria-label="About">
+      <div class="container">
+        <h2 class="About"></h2>
+        <p>I'm Corey - a Frontend Software Engineer focused on building clean, performant, and accessible web experiences. I blend hands-on problem-solving from my automotive background with  modern development practices to deliver interfaces people love using.</p>
+        <ul>
+          <li>Responsive, mobile-first interfaces</li>
+          <li>Reusable React component systems</li>
+          <li>Performance budgets & audits</li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact" aria-label="Contact">
+      <div class="container">
+        <h2 class="Contact"></h2>
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <p>
+            <label for="name">Name</label><br>
+            <input id="name" name="name" type="text" required />
+          </p>
+          <p>
+            <label for="email">Email</label><br>
+            <input id="email" name="email" type="email" required />
+          </p>
+          <p>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </p>
+          <p><button type="submit">Send</button></p>
+          <p>Or email <a href="mailto:hello@codebycorey.dev">hello@codebycorey.dev</a></p>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><p>© <span id="year"></span> Code by Corey</p></footer>
-  <script src="script.js"></script>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year">2025</span>Code by Corey</p>
+    </div>
+  </footer>
 </body>
 </html>
