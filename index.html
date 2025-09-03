@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Clean code, creative interfaces. Portfolio and services by Corey Shamburger, Frontend Software Engineer." />
   <title>Code by Corey — Frontend Software Engineer</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -13,6 +16,7 @@
   <header class="site-header" role="banner">
     <div class="container">
       <a href="#home" class="brand" aria-label="Code by Corey Home">
+        <img src="./assets/logo.png" alt="Code by Corey logo" class="brand__logo" />
         <span class="brand__name">Code by Corey</span>
       </a>
       <nav aria-label="Primary">
@@ -31,14 +35,14 @@
         <h1>Frontend Software Engineer</h1>
         <p>Clean code, creative interfaces.</p>
         <p>
-          <a href="#projects">View My Work</a> ·
-          <a href="#contact">Hire Me</a>
+          <a class="btn" href="#projects">View My Work</a> ·
+          <a class="btn btn--ghost" href="#contact">Hire Me</a>
         </p>
       </div>
     </section>
     <section id="projects" aria-label="Featured Projects">
       <div class="container">
-        <h2 class="Featured Projects"></h2>
+        <h2>Featured Projects</h2>
         <article>
           <header>
             <h3>Top-Notch Landing</h3>
@@ -85,7 +89,7 @@
     </section>
     <section id="services" aria-label="Services">
       <div class="container">
-        <h2 class="Services"></h2>
+        <h2>Services</h2>
         <ul>
           <li>
             <h3>Frontend Development</h3>
@@ -104,7 +108,7 @@
     </section>
     <section id="about" aria-label="About">
       <div class="container">
-        <h2 class="About"></h2>
+        <h2>About</h2>
         <p>I'm Corey - a Frontend Software Engineer focused on building clean, performant, and accessible web experiences. I blend hands-on problem-solving from my automotive background with  modern development practices to deliver interfaces people love using.</p>
         <ul>
           <li>Responsive, mobile-first interfaces</li>
@@ -115,7 +119,7 @@
     </section>
     <section id="contact" aria-label="Contact">
       <div class="container">
-        <h2 class="Contact"></h2>
+        <h2>Contact</h2>
         <form name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
           <p>
@@ -131,7 +135,7 @@
             <textarea id="message" name="message" rows="6" required></textarea>
           </p>
           <p><button type="submit">Send</button></p>
-          <p>Or email <a href="mailto:hello@codebycorey.dev">hello@codebycorey.dev</a></p>
+          <p>Email: <a href="mailto:hello@codebycorey.dev">hello@codebycorey.dev</a></p>
         </form>
       </div>
     </section>
