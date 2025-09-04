@@ -1,0 +1,12 @@
+{
+  "name": "Code by Corey",
+  "short_name": "Corey",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A192F",
+  "theme_color": "#0A192F",
+  "icons": [
+    { "src": "/logo.png", "sizes": "1200x400", "type": "image/png" },
+    { "src": "/favicon.ico", "sizes": "64x64", "type": "image/x-icon" }
+  ]
+}
