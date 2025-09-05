@@ -13,7 +13,10 @@
     --maxw: 1100px;
 }
 
-*{box-sizing: border-box}
+* {
+    box-sizing: border-box
+}
+
 html, body{height: 100px}
 body {
     margin: 0;
@@ -168,6 +171,34 @@ section {
     font-weight: 700;
 }
 
+.btn--ghost {
+    color: #fff;
+}
+
+/* ===== IMAGES ===== */
+
+.hero-img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: block;
+    margin-inline: auto;
+    padding: 0 5px;
+}
+
+#projects article img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+    margin: 0 0 0.75rem 0;
+    border: 1px solid rgba(255. 255, 255, 0.06);
+    box-shadow: var(--shadow);
+}
+
+
 #hero a:last-of-type {
     color: #fff;
 }
@@ -186,6 +217,28 @@ section {
     gap: 1rem;
 }
 
+#projects .container {
+    display: grid;
+    gap: 1rem;
+}
+
+#projects article {
+    background: var(--card);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+
+#projects ul {
+    margin: 0.6rem 0;
+    padding-left: 1.2rem;
+    color: #DDE8F6;
+}
+
+#projects p:last-of-type a {
+    margin-right: 0.6rem;
+}
 
 #projects article {
     background: var(--card);
@@ -231,8 +284,25 @@ section {
 
 /* ===== ABOUT ===== */
 
+#about img {
+    float: left;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 1rem 1 rem 0;
+    box-shadow: var(--shadow);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
 #about .container {
     max-width: 900px;
+}
+
+#about .container:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #about ul {
@@ -277,6 +347,33 @@ button {
 
 button:is(:hover, :focus) {
     filter: brightness(1.05);
+}
+
+/* ===== ANIMATIONS (REDUCED-MOTION AWARE ===== */
+
+@media fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: no-preference){
+    #projects article,
+    #services li,
+    #about .container,
+    #contact form{
+        animation: fadeUp 0.6s ease both;
+    }
+    #projects article:nth-child(1){animation-delay: 0.05s;}
+    #projects article:nth-child(2){animation-delay: 0.15s;}
+    #projects article:nth-child(3){animation-delay: 0.25s;}
+}
+
+/* ===== CARD HOVER LIFT ===== */
+
+#projects article:hover, 
+#services li:hover {
+    transform: translateY(-2px);
+    transition: transform 0.18s ease;
 }
 
 /* ===== FOOTER ===== */
